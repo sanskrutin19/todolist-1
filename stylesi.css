@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #F0FFF0;
+}
+
+#app {
+    display: flex;
+    width: 80%;
+    height: 85vh;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 25%;
+    background: #FFDEE9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid #F7CAD0;
+}
+
+#taskCategories {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.category {
+    padding: 10px;
+    border-radius: 6px;
+    background: #FFC6FF;
+    margin: 8px 0;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.category:hover {
+    background: #FFB6B9;
+}
+
+.category.active {
+    background: #FFB6B9;
+    font-weight: bold;
+}
+
+/* Sticky Note */
+#stickyNote {
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-top: auto;
+}
+
+/* Main Content */
+#main-content {
+    width: 75%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Add Task Section */
+.input-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    padding: 10px;
+    width: 60%;
+    border: 2px solid #FFB6C1;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.input-group button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #FFB6C1;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.input-group button:hover {
+    transform: scale(1.1);
+}
+
+/* Task List */
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #E6E6FA;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: gray;
+    background: #D3D3D3;
+}

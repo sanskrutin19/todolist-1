@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="stylesi.css">
+</head>
+<body>
+
+    <div id="app">
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <h2>📌 Categories</h2>
+            <ul id="taskCategories">
+                <li class="category active" data-category="Study">📖 Study</li>
+                <li class="category" data-category="Shopping">🛒 Shopping</li>
+                <li class="category" data-category="Exercise">💪 Exercise</li>
+                <li class="category" data-category="Goals">🎯 Goals</li>
+            </ul>
+            <div id="stickyNote">😊</div>
+        </div>
+
+        <!-- Main Content -->
+        <div id="main-content">
+            <h1 id="categoryTitle">Study Tasks</h1>
+
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Enter your task...">
+                <button id="addTaskBtn">➕ Add Task</button>
+            </div>
+
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+
+    <script src="scriptsi.js"></script>
+</body>
+</html>
